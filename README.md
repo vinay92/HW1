@@ -53,6 +53,7 @@ f. Go to the management consoles and verify that the VM's have been provisioned.
 ```
 bash InstallNginx.sh
 ```
-6. Once the playbook installs and starts nginx service, go to the IP of the VM in order to verify that nginx is working properly. e.g. - http://192.168.1.103
+
+Once the playbook installs and starts nginx service, go to the IP of the VM in order to verify that nginx is working properly. e.g. - http://192.168.1.103
 
 Once this is done, we have met all the requirements and the servers have been installed.
