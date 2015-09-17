@@ -52,7 +52,8 @@ f. Go to the management consoles and verify that the VM's have been provisioned.
 2. The provisioning script also adds the inventory file to the ansible folder. 
 3. This is the file which has the information about the VM's. 
 4. The nginx.yml file in the ansible folder is playbook which has code to install nginx based on the inventory file it receives as an argument. 
-5. In order to install nginx run the following script:
+5. Since AWS takes 4-5 minutes to apply the rules in the security group make sure you wait for that time before this next step.
+6. In order to install nginx run the following script:
 ```
 bash InstallNginx.sh
 ```
