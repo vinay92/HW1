@@ -21,28 +21,28 @@ AWS_SECRET_KEY
 This project need npm, node.js and ansible in order to work. These dependencies can be installed by running the InstallDeps.sh shell script. 
 
 ##Steps to follow in order to provision the VM's
-1. Clone this repository into your local system.
+a. Clone this repository into your local system.
 
-2. Run the following script to install the dependencies:
+b. Run the following script to install the dependencies:
 ```
 bash InstallDeps.sh
 ```
 This will install npm, node.js and ansible in your system. 
 
-3. Now in order to download the needle node.js module required for DigitalOcean and the AWS SDK required for AWS, run the DownloadModules script:
+c. Now in order to download the needle node.js module required for DigitalOcean and the AWS SDK required for AWS, run the DownloadModules script:
 ```
 bash DownloadModules.sh
 ```
 This will download the required modules mentioned in "package.json" into the "node_modules" folder.
 
-4. Make a new folder called "keys" and copy the "dg.key" and "devops.pem" mentioned previously into the keys folder. Move this folder into the ansible folder in the downloaded repo. Also make sure you have set the environment variables for the tokens as mentioned previously.
+d. Make a new folder called "keys" and copy the "dg.key" and "devops.pem" mentioned previously into the keys folder. Move this folder into the ansible folder in the downloaded repo. Also make sure you have set the environment variables for the tokens as mentioned previously.
 
-5. In order to provision the VM's simply run the script:
+e. In order to provision the VM's simply run the script:
 ```
 bash ProvisionServers.sh
 ```
 
-6. Go to the management consoles and verify that the VM's have been provisioned.
+f. Go to the management consoles and verify that the VM's have been provisioned.
 
 ##Installing nginx via ansible
 1. In order to install and run the nginx server on these servers we need to use ansible.
