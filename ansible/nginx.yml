@@ -1,0 +1,16 @@
+---
+- hosts: digitalocean
+  sudo: yes
+  tasks:
+   - name: Install nginx
+     apt: pkg=nginx state=installed 
+   - name: Start nginx
+     service: name=nginx state=started
+
+- hosts: aws
+  sudo: yes
+  tasks:
+   - name: Install nginx
+     apt: pkg=nginx state=installed 
+   - name: Start nginx
+     service: name=nginx state=started
