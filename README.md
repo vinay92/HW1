@@ -43,4 +43,11 @@ bash ProvisionServers.sh
 1. In order to install and run the nginx server on these servers we need to use ansible.
 2. The provisioning script also adds the inventory file to the ansible folder. 
 3. This is the file which has the information about the VM's. 
-4. 
+4. The nginx.yml file in the ansible folder is playbook which has code to install nginx based on the inventory file it receives as an argument. 
+5. In order to install nginx run the following script:
+```
+bash InstallNginx.sh
+```
+6. Once the playbook installs and starts nginx service, go to the IP of the VM in order to verify that nginx is working properly. e.g. - http://192.168.1.103
+
+Once this is done, we have met all the requirements and the servers have been installed.
